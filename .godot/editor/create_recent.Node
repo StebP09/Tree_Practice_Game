@@ -1,0 +1,14 @@
+Label
+HBoxContainer
+Control
+CanvasLayer
+AnimationPlayer
+CollisionPolygon2D
+TileMap
+StaticBody2D
+Timer
+Marker2D
+CollisionShape2D
+Sprite2D
+ProgressBar
+Node2D

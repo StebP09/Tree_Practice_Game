@@ -1,0 +1,8 @@
+res://Scenes/levels/dev_level.tscn
+res://Scenes/Entities/entities.tscn
+res://Scenes/Entities/player.tscn
+res://Scenes/levels/outside.tscn
+res://Scenes/Objects/chest.tscn
+res://Scenes/Entities/slime.tscn
+res://Scenes/Objects/tree.tscn
+res://Scenes/ui.tscn

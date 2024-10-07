@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://1lqj5q0rni3g"]
+
+[ext_resource type="Script" path="res://Scenes/ui.gd" id="1_1cuok"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dxp5u"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_d5ldc"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_whqnp"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_gapc1"]
+font_size = 30
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_1cuok")
+
+[node name="TreeText" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TreeText"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.8
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -46.0
+offset_top = -23.0
+offset_right = 46.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Main" type="Label" parent="TreeText/HBoxContainer"]
+layout_mode = 2
+text = "Trees Cut:"
+label_settings = SubResource("LabelSettings_dxp5u")
+
+[node name="Update" type="Label" parent="TreeText/HBoxContainer"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_d5ldc")
+
+[node name="Sword Damage" type="HBoxContainer" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.9
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -67.5
+offset_top = -23.0
+offset_right = 67.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Sword" type="Label" parent="Sword Damage"]
+layout_mode = 2
+text = "Sword Damage:"
+label_settings = SubResource("LabelSettings_whqnp")
+
+[node name="Damage" type="Label" parent="Sword Damage"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_gapc1")
